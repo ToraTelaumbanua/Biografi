@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keren</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+
+    <style>
+      .active {
+        color: rgb(0, 2, 138);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              ubuntu: ["Ubuntu", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"], z
+                roboto: ["Roboto", "sans-serif"],
+              alfa: ["Alfa Slab One", "cursive"],
+              joged: ["Dancing Script", "cursive"],
+              pacifio: ["Pacifico", "cursive"],
+              lato: ["Lato", "sans-serif"],
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="flex justify-center items-center w-screen h-screen relative" id="particles-js">
+      <!-- profil -->
+      <div class="min-w-[1265px] max-w-[1265px] min-h-[577px] max-h-[577px] bg-white rounded-xl flex shadow-2xl absolute">
+        <div class="w-4/12 flex flex-col items-center pt-16">
+          <div class="group overflow-hidden w-[200px] h-[200px] rounded-full border-4 border-gray-300">
+            <img src="images/tora_1.1.jpg" alt="" class="transition group-hover:rotate-3 duration-500 group-hover:scale-125 rounded-full" />
+          </div>
+          <div>
+            <p class="font-joged text-4xl mt-6">Tora</p>
+          </div>
+          <div>
+            <p class="font-alfa text-3xl mt-2 drop-shadow-lg">Autobiografi</p>
+          </div>
+          <div>
+            <ul class="flex mt-2">
+              <li>
+                <!-- Linkedin-Profil -->
+                <div class="hover:bg-gray-300 bg-white rounded-full w-[40px] h-[40px] cursor-pointer items-center flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <!-- Github-Profil -->
+                <div class="hover:bg-gray-300 bg-white rounded-full w-[40px] h-[40px] cursor-pointer items-center flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <!-- Instagram-Profil -->
+                <div class="hover:bg-gray-300 bg-white rounded-full w-[40px] h-[40px] cursor-pointer items-center flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- pages -->
+        <div class="w-9/12 rounded-3xl">
+          <!-- homepage -->
+          <div id="homePage" class="rounded-xl bg-gradient-to-r from-neutral-50 via-gray-200 to-gray-500 w-full h-full flex flex-col justify-center items-center">
+            <p class="text-[70px] font-joged">Hi dear 👋, My name is</p>
+            <p class="text-center text-[60px] font-alfa">Andriaman Damai Telaumbanua</p>
+          </div>
+          <!-- homepage -->
+
+          <!-- aboutpage -->
+          <div id="aboutPage" class="w-full h-full bg-[#262626] hidden py-10 px-16 rounded-xl overflow-auto" data-simplebar>
+            <!-- info dasar -->
+            <div class="flex flex-col gap-7">
+              <h1 id="aboutPageTit" class="mb-6 basis-full font-poppins font-black text-5xl text-white">About <span class="text-sky-400">Me</span></h1>
+              <div class="flex font-poppins text-white">
+                <p class="basis-7/12">
+                  Saya tumbuh di Nias Sumatera utara dan menghabiskan masa kecil saya di sana. Orangtua saya, adalah sosok yang sangat penting dalam hidup saya. Mereka mengajarkan saya nilai-nilai seperti Kehormatan dan Etika, Empati dan
+                  Kepedulian, Kerja Keras dan Disiplin, Kemandirian, Kerendahan Hati, Keberagaman dan Toleransi, yang telah membentuk pandangan hidup saya. Saya adalah anak ke 4, memiliki lima saudara dan saudari, masing-masing dengan
+                  kepribadian dan minat mereka sendiri. Saya selalu merasa diberkati karena memiliki saudara-saudara yang selalu menjadi pendukung dan teman baik dalam perjalanan hidup saya. Kami selalu berbagi kenangan indah dan mengatasi
+                  tantangan bersama. Selain keluarga inti, keluarga besar kami juga memiliki peran yang penting dalam hidup saya. Saya memiliki paman, bibi, sepupu dan lainnya yang selalu memberikan dukungan, cinta, dan persahabatan.
+                  Hubungan keluarga adalah salah satu aspek terpenting dalam hidup saya dan selalu menjadi sumber kebahagiaan dan kekuatan. Kelak, saya berharap dapat melanjutkan warisan keluarga dan menjadi panutan yang baik bagi generasi
+                  selanjutnya, seperti yang telah dilakukan keluarga saya bagi saya.
+                </p>
+                <div class="basis-[3%]"></div>
+                <div class="basis-auto">
+                  <ul class="flex flex-col gap-2">
+                    <li>
+                      <p class="font-bold"><span class="text-sky-600 font-poppins mr-3 inline-block">Umur</span>10</p>
+                    </li>
+                    <li>
+                      <p class="font-bold"><span class="text-sky-600 font-poppins mr-3">Kebangsaan</span>ID</p>
+                    </li>
+                    <li>
+                      <p class="font-bold"><span class="text-sky-600 font-poppins mr-3">Alamat</span>Nias, Sumatera Utara</p>
+                    </li>
+                    <li>
+                      <p class="font-bold"><span class="text-sky-600 font-poppins mr-3">e-mail</span>Andriaman.tel@gmail.com</p>
+                    </li>
+                    <li>
+                      <p class="font-bold"><span class="text-sky-600 font-poppins mr-3">Phone</span>+62 812-6404-4760</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- info dasar end -->
+
+            <!-- keterampilan -->
+            <!-- <div class="flex flex-col gap-7">
+              <h1 class="basis-full font-poppins font-black text-xl text-white mt-12">What <span class="text-sky-400">I Do</span></h1>
+              <div class="grid grid-cols-2 gap-x-7 gap-y-6 font-poppins text-white">
+                <div class="flex flex-col gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shop fill-sky-600" viewBox="0 0 16 16">
+                    <path
+                      d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"
+                    />
+                  </svg>
+                  <h1 class="text-xl font-bold text-white">Design</h1>
+                  <p class="font-poppins text-sm">
+                    Saya seorang desainer kreatif dengan pengalaman luas dalam desain grafis, desain web, dan logo. Saya berkomitmen untuk menciptakan karya yang unik dan efektif, menggabungkan estetika dengan komunikasi yang jelas. Desain
+                    adalah bahasa saya, dan saya selalu up-to-date dengan tren terbaru dalam industri ini.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pencil fill-sky-600" viewBox="0 0 16 16">
+                    <path
+                      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
+                    />
+                  </svg>
+                  <h1 class="text-xl font-bold text-white">Write a program</h1>
+                  <p class="font-poppins text-sm">
+                    Saya adalah seorang pengembang perangkat lunak dengan pengalaman dalam pengembangan aplikasi desktop dan web menggunakan berbagai bahasa pemrograman. Saya fokus pada pemodelan data, antarmuka pengguna intuitif, serta
+                    pengkodean yang efisien dan aman. Saya memiliki keterampilan dalam pemrograman berorientasi objek, pengembangan basis data, dan integrasi API, dengan komitmen untuk menciptakan solusi perangkat lunak yang efektif.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gear fill-sky-600" viewBox="0 0 16 16">
+                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                    <path
+                      d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
+                    />
+                  </svg>
+                  <h1 class="text-xl font-bold text-white">Software Engineer</h1>
+                  <p class="font-poppins text-sm">
+                    Saya adalah seorang Software Engineer dengan pengalaman dalam merancang, mengembangkan, dan menguji perangkat lunak kompleks. Saya memiliki pemahaman yang mendalam tentang perangkat keras, sistem operasi, dan kemampuan
+                    dalam menulis kode yang efisien. Saya berfokus pada pengembangan solusi perangkat lunak yang memenuhi kebutuhan pengguna dan tetap up-to-date dengan perkembangan teknologi terbaru.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-graph-up-arrow fill-sky-600" viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+                    />
+                  </svg>
+                  <h1 class="text-xl font-bold text-white">Digital Marketing</h1>
+                  <p class="font-poppins text-sm">Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                </div>
+              </div>
+            </div> -->
+            <!-- keterampilan end -->
+
+            <!-- testimonial -->
+            <div class="owl-carousel owl-theme owl-loaded" id="one">
+              <div class="owl-stage-outer">
+                <div id="testi" class="w-auto h-auto flex mt-7 overflow-auto owl-stage">
+                  <div class="flex flex-col justify-center card owl-item">
+                    <img src="images/bapak.jpg" alt="" class="imgtes" />
+                    <p class="text-white font-poppins text-sm leading-relaxed mb-3">
+                      Bapak saya adalah pribadi yang luar biasa, penuh dengan keberanian, kesabaran, dan kesetiaan terhadap keluarga. Kepemimpinan, empati, dan kebijaksanaannya telah menjadi sumber inspirasi bagi kami, sementara kemampuan
+                      adaptasinya membantu keluarga melewati berbagai tantangan. Disiplin, kedisiplinan, dan kebijaksanaan dalam pengelolaan keuangan adalah kualitas-kualitas yang selalu diajarkan oleh beliau, memberikan fondasi kuat dalam
+                      hidup saya. Keterbukaan terhadap budaya dan nilai-nilai yang beragam selalu dianjurkan olehnya, menciptakan lingkungan yang penuh penghargaan.
+                      <br /><br />
+                    </p>
+                    <div class="text-left flex justify-between">
+                      <div>
+                        <p class="text-white font-roboto font-black">My father</p>
+                        <p class="text-white font-poppins text-xs">Alirudin Telaumbanua</p>
+                      </div>
+                      <div class="opacity-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="fill-orange-600 bi bi-quote" viewBox="0 0 16 16">
+                          <path
+                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col justify-center card owl-item">
+                    <img src="images/bapakmama.jpg" alt="" class="imgtes" />
+                    <p class="text-white font-poppins text-sm leading-relaxed mb-3">
+                      <br /><br /><br />
+                      Ibu saya adalah pilar kuat dalam hidup saya. Beliau adalah sosok yang penuh kasih, bijaksana, dan penuh dedikasi terhadap keluarga. Ibu mengajarkan nilai-nilai seperti empati, kejujuran, dan kepedulian, yang membentuk
+                      pandangan hidup saya. Dalam keluarga yang besar, ibu selalu menjadi penyemangat dan sumber kekuatan. Sifatnya yang penuh kasih dan perhatian selalu menciptakan lingkungan hangat di rumah kami, dan dia adalah contoh
+                      yang luar biasa dalam kehidupan sehari-hari.
+                      <br /><br /><br />
+                    </p>
+                    <div class="text-left flex justify-between">
+                      <div>
+                        <p class="text-white font-roboto font-black">My mother</p>
+                        <p class="text-white font-poppins text-xs">Iman Sejati Harefa</p>
+                      </div>
+                      <div class="opacity-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="fill-orange-600 bi bi-quote" viewBox="0 0 16 16">
+                          <path
+                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+
+            <!-- testimonial end -->
+
+            <!-- client -->
+            <div class="flex justify-between mt-14">
+              <div class="text-white text-2xl font-poppins font-black">CLients</div>
+            </div>
+            <div class="owl-carousel owl-theme owl-loaded" id="two">
+              <div class="owl-stage-outer">
+                <div class="w-auto h-auto flex mt-7 overflow-auto owl-stage px-4">
+                  <div class="owl-item">
+                    <div class="client-block">
+                      <img src="images/client-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="client-block">
+                      <img src="images/client-2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="client-block">
+                      <img src="images/client-3.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="client-block">
+                      <img src="images/client-4.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="client-block">
+                      <img src="images/client-5.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="client-block">
+                      <img src="images/client-6.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="client-block">
+                      <img src="images/client-7.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-nav">
+                <div class="owl-prev"></div>
+                <div class="owl-next"></div>
+              </div>
+            </div>
+            <!-- client end -->
+
+            <!-- pricing -->
+
+            <!-- pricing end -->
+          </div>
+          <!-- aboutpage -->
+
+          <!-- resumepage -->
+          <div id="resumePage" class="w-full h-full bg-[#262626] hidden py-10 px-16 rounded-xl overflow-auto">
+            <div class="flex flex-col gap-7">
+              <h1 id="aboutPageTit" class="basis-full font-poppins font-black text-5xl text-white">About <span class="text-sky-400">Me</span></h1>
+              <div class="flex font-poppins text-white">
+                <div class="flex flex-col gap-7">
+                  <h1 class="basis-full font-poppins font-black text-xl text-white mt-12">Early Education<span class="text-sky-400"> and Development</span></h1>
+                  <p class="basis-7/12">
+                    Sejak masa kecil, pendidikan selalu menjadi fokus utama dalam hidup saya. Saya menempuh pendidikan dasar di SD Bozihona, di mana saya pertama kali terpapar pada dunia ilmu pengetahuan dan nilai-nilai dasar. Pendidikan
+                    menengah saya dilanjutkan di SMP N 1 Idanogawo, yang memberikan saya kesempatan untuk lebih mendalami berbagai mata pelajaran dan mulai mengembangkan minat dalam ilmu sains. Setelah menyelesaikan pendidikan menengah
+                    saya, saya merasa tertantang untuk mengejar studi lanjutan di perguruan tinggi. Di sana, saya mendapatkan wawasan mendalam tentang ilmu studi It dan terus mengasah kemampuan saya dalam dunia pemogramman dan digital.
+                    Pengalaman ini memperkaya pemahaman saya tentang dunia dan membantu membentuk aspirasi karier saya.
+                  </p>
+                  <br />
+                  <h1 class="text-center">Skil saya dalam proses pendidikan</h1>
+                  <div class="grid grid-cols-2 gap-x-7 gap-y-6 font-poppins text-white">
+                    <div class="flex flex-col gap-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shop fill-sky-600" viewBox="0 0 16 16">
+                        <path
+                          d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"
+                        />
+                      </svg>
+                      <h1 class="text-xl font-bold text-white">Design</h1>
+                      <p class="font-poppins text-sm">
+                        Saya seorang desainer kreatif dengan pengalaman luas dalam desain grafis, desain web, dan logo. Saya berkomitmen untuk menciptakan karya yang unik dan efektif, menggabungkan estetika dengan komunikasi yang jelas.
+                        Desain adalah bahasa saya, dan saya selalu up-to-date dengan tren terbaru dalam industri ini.
+                      </p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pencil fill-sky-600" viewBox="0 0 16 16">
+                        <path
+                          d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
+                        />
+                      </svg>
+                      <h1 class="text-xl font-bold text-white">Write a program</h1>
+                      <p class="font-poppins text-sm">
+                        Saya adalah seorang pengembang perangkat lunak dengan pengalaman dalam pengembangan aplikasi desktop dan web menggunakan berbagai bahasa pemrograman. Saya fokus pada pemodelan data, antarmuka pengguna intuitif, serta
+                        pengkodean yang efisien dan aman. Saya memiliki keterampilan dalam pemrograman berorientasi objek, pengembangan basis data, dan integrasi API, dengan komitmen untuk menciptakan solusi perangkat lunak yang efektif.
+                      </p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gear fill-sky-600" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                        <path
+                          d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
+                        />
+                      </svg>
+                      <h1 class="text-xl font-bold text-white">Software Engineer</h1>
+                      <p class="font-poppins text-sm">
+                        Saya adalah seorang Software Engineer dengan pengalaman dalam merancang, mengembangkan, dan menguji perangkat lunak kompleks. Saya memiliki pemahaman yang mendalam tentang perangkat keras, sistem operasi, dan
+                        kemampuan dalam menulis kode yang efisien. Saya berfokus pada pengembangan solusi perangkat lunak yang memenuhi kebutuhan pengguna dan tetap up-to-date dengan perkembangan teknologi terbaru.
+                      </p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-graph-up-arrow fill-sky-600" viewBox="0 0 16 16">
+                        <path
+                          fill-rule="evenodd"
+                          d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+                        />
+                      </svg>
+                      <h1 class="text-xl font-bold text-white">Digital Marketing</h1>
+                      <p class="font-poppins text-sm">Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- resumepage -->
+
+          <!-- portopage -->
+          <div id="portoPage" class="w-full h-full bg-[#1c1c1c] hidden py-10 px-16 rounded-xl overflow-auto">
+            <div class="flex flex-col gap-7">
+              <h1 id="aboutPageTit" class="basis-full font-poppins font-black text-5xl text-white">About <span class="text-sky-400">Me</span></h1>
+              <div class="flex font-poppins text-white">
+                <section id="story" class="story">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 col-10 text-center">
+                        <span>Hobi dan Kebiasaan</span>
+                        <h2>Cerita</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, similique non soluta nulla asperiores voluptatem.</p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <ul class="timeline">
+                          <li>
+                            <div class="timeline-image" style="background-image: url(img/Ukrim.jpeg)"></div>
+                            <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                <h3>Di Pertemukan</h3>
+                                <span>1 Agustus 2022</span>
+                              </div>
+                              <div class="timeline-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, modi autem? Commodi autem quo quia?</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="timeline-inverted">
+                            <div class="timeline-image" style="background-image: url(img/Visit\ emiten.JPG)"></div>
+                            <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                <h3>Awal Bertemu</h3>
+                                <span>14 Maret 2023</span>
+                              </div>
+                              <div class="timeline-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim eaque obcaecati odit itaque explicabo quisquam quos at.</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="timeline-image" style="background-image: url(img/Day\ art.JPG)"></div>
+                            <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                <h3>Mulai Dekat</h3>
+                                <span>19 Juni 2023</span>
+                              </div>
+                              <div class="timeline-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, deleniti distinctio. Esse quas sit explicabo corporis magni qui expedita a.</div>
+                            </div>
+                          </li>
+                          <li class="timeline-inverted">
+                            <div class="timeline-image" style="background-image: url(img/Gallery/Maliboro\ moment.jpg)"></div>
+                            <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                <h3>Mulai Serius</h3>
+                                <span>23 Juli 2023</span>
+                              </div>
+                              <div class="timeline-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim eaque obcaecati odit itaque explicabo quisquam quos at.</p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- portopage -->
+
+          <!-- blogpage -->
+          <div id="blogPage" class="w-full h-full bg-white hidden">BLOG</div>
+          <!-- blogpage -->
+
+          <!-- contactpage -->
+          <div id="contactPage" class="w-full h-full bg-white hidden">CONTACT</div>
+          <!-- contactpage -->
+        </div>
+        <!-- pages -->
+        <!-- pagesButton -->
+        <div style="z-index: 10" class="absolute translate-x-[1280px] w-[68px] bg-[#262626]/70 h-auto rounded-full">
+          <ul class="flex flex-col gap-4 justify-center items-center pt-7 pb-7">
+            <li class="hovering flex justify-center text-center items-center group" id="home">
+              <div class="popover_content font-roboto font-semibold">
+                <p class="text-white translate-y-[3px] translate-x-1">Home</p>
+              </div>
+              <svg style="color: white" class="group-hover:fill-sky-400 active" id="homeBut" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                <path
+                  d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"
+                />
+              </svg>
+            </li>
+            <li class="hovering flex justify-center text-center items-center group" id="about">
+              <div class="popover_content font-roboto font-semibold">
+                <p class="text-white translate-y-[3px] translate-x-1">About</p>
+              </div>
+              <svg style="color: white" class="group-hover:fill-sky-400" id="aboutBut" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                />
+              </svg>
+            </li>
+            <li class="hovering flex justify-center text-center items-center group" id="resume">
+              <div class="popover_content font-roboto font-semibold">
+                <p class="text-white translate-y-[3px] translate-x-1">Resume</p>
+              </div>
+              <svg style="color: white" class="group-hover:fill-sky-400" id="resumeBut" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"
+                />
+                <path
+                  d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"
+                />
+              </svg>
+            </li>
+            <li class="hovering flex justify-center text-center items-center group" id="porto">
+              <div class="popover_content font-roboto font-semibold">
+                <p class="text-white translate-y-[3px] translate-x-1">Porto</p>
+              </div>
+              <svg style="color: white" class="group-hover:fill-sky-400" id="portoBut" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                <path
+                  d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"
+                />
+              </svg>
+            </li>
+            <li class="hovering flex justify-center text-center items-center group" id="blog">
+              <div class="popover_content font-roboto font-semibold">
+                <p class="text-white translate-y-[3px] translate-x-1">Blog</p>
+              </div>
+              <svg style="color: white" class="group-hover:fill-sky-400" id="blogBut" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+                <path
+                  d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"
+                />
+                <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
+              </svg>
+            </li>
+            <li class="hovering flex justify-center text-center items-center group" id="contact">
+              <div class="popover_content font-roboto font-semibold">
+                <p class="text-white translate-y-[3px] translate-x-1">Contact</p>
+              </div>
+              <svg style="color: white" class="group-hover:fill-sky-400" id="contactBut" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <!-- pagesButton end -->
+      </div>
+      <!-- profil end -->
+    </div>
+
+    <!-- simplebar -->
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- owlcarousel -->
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- main -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

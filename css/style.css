@@ -1,0 +1,216 @@
+.popover_content {
+  /* z-index: -1;
+    visibility: hidden;
+    width: auto;
+    height: 30px;
+    color: cyan;
+    position: absolute;
+    right: 70px;
+    padding: 1.5rem;
+    opacity: 0; */
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -65px;
+  transform: translate(10px, 0);
+  background-color: rgb(56, 189, 248);
+  height: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 20px 0 0 20px;
+  width: 70px;
+}
+.hovering:hover .popover_content {
+  /* visibility: visible;
+    z-index: 10;
+    opacity: 1; */
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-20px, 0);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+.popover_content::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  right: -31px;
+  translate: (40px, 0);
+  border-width: 20px 16px 10px 16px;
+  rotate: 90deg;
+  border-color: transparent transparent rgb(56, 189, 248) transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.active {
+  fill: rgb(56, 189, 248);
+}
+.card {
+  text-align: center;
+  border: 2px solid #444;
+  border-radius: 20px;
+  margin: 45px 2px 10px;
+  padding: 0 25px 15px;
+  width: auto;
+  height: auto;
+  width: 700px;
+}
+.imgtes {
+  max-width: 90px;
+  max-height: 90px;
+  margin: -45px auto 20px;
+  border-radius: 90px;
+  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 22%);
+}
+.owl-nav {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+}
+.owl-nav .owl-next,
+.owl-nav .owl-prev {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  color: black;
+  background: orange;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px !important;
+}
+.owl-nav .owl-prev:hover {
+  transform: translate(-4px, 0);
+}
+.client-block {
+  text-align: center;
+  padding: 5px 0;
+  opacity: 0.7;
+  overflow: auto;
+}
+
+/* Porto story */
+.story {
+  background-image: url("img/bg story.png") !important; /* URL gambar latar belakang */
+  background-size: cover !important; /* Menyesuaikan gambar dengan elemen */
+  background-position: center center !important; /* Posisi gambar tengah-tengah */ /* color: #fff !important; Warna teks putih */
+}
+
+.timeline-panel {
+  background-color: rgba(26, 26, 26, 0.8) !important; /* Latar belakang semi transparan */
+  color: #fff !important; /* Warna teks putih pada caption */
+}
+
+.timeline {
+  list-style: none;
+  padding: 2rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 160px;
+  height: 160px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(172, 149, 0, 0.19), 0 1px 2px rgb(255, 196, 0);
+  border-radius: 50%;
+}
+
+.timeline li .timeline-panel {
+  width: 35%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
+/* Modification */
+.story {
+  background-image: url("img/bg story.png") !important; /* URL gambar latar belakang */
+  background-size: cover !important; /* Menyesuaikan gambar dengan elemen */
+  background-position: center center !important; /* Posisi gambar tengah-tengah */
+  /* color: #fff !important; Warna teks putih */
+}
+.timeline-panel {
+  color: #fff !important; /* Warna teks putih pada caption */
+}
+.timeline-heading h3 {
+  color: #ffcc00 !important; /* Warna kuning untuk judul */
+}
+/* Modification */
